@@ -4,6 +4,7 @@ background:#f4f4f4;
 margin:0;
 }
 
+/* HEADER */
 header{
 background:#35577D;
 color:white;
@@ -11,33 +12,94 @@ text-align:center;
 padding:20px;
 }
 
+/* MENÚ */
+nav{
+background:#222;
+padding:10px;
+display:flex;
+gap:10px;
+}
+
+nav button{
+background:#35577D;
+color:white;
+border:none;
+padding:10px 15px;
+cursor:pointer;
+border-radius:4px;
+}
+
+nav button:hover{
+background:#2c4764;
+}
+
+/* LISTA DEL MENÚ */
+ul{
+list-style:none;
+padding:0;
+margin-top:10px;
+}
+
+li{
+padding:8px;
+background:#eee;
+margin:5px 0;
+cursor:pointer;
+border-radius:4px;
+transition:0.3s;
+}
+
+li:hover{
+background:#ddd;
+}
+
+/* SECCIONES */
 section{
 background:white;
 margin:20px;
 padding:20px;
-border-radius:6px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* INPUTS */
+input, textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+/* BOTONES */
 button{
 background:#35577D;
 color:white;
 border:none;
-padding:10px;
+padding:10px 15px;
 cursor:pointer;
+border-radius:4px;
+transition:0.3s;
 }
 
-input, textarea{
-width:100%;
-padding:8px;
-margin:5px 0;
+button:hover{
+background:#2c4764;
 }
 
+/* TABLAS */
 table{
 width:100%;
 border-collapse:collapse;
+margin-top:10px;
 }
 
 td, th{
 border:1px solid #ccc;
-padding:8px;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#35577D;
+color:white;
 }

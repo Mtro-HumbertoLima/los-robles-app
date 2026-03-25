@@ -1,16 +1,40 @@
 import "./App.css";
 import { useState } from "react";
-import { QRCodeCanvas } from "qrcode.react";
+
+import Menu from "./components/Menu";
+import Perfil from "./components/Perfil";
+import Reportes from "./components/Reportes";
+import QR from "./components/QR";
+import Adeudos from "./components/Adeudos";
+import Incidencias from "./components/Incidencias";
 
 function App() {
 
-const [qr,setQr] = useState("");
+const [vista,setVista] = useState("perfil");
 
-function generarQR(){
+function renderVista(){
 
-let codigo = "INV-" + Math.floor(Math.random()*100000);
+switch(vista){
 
-setQr(codigo);
+case "perfil":
+return <Perfil/>;
+
+case "reportes":
+return <Reportes/>;
+
+case "qr":
+return <QR/>;
+
+case "adeudos":
+return <Adeudos/>;
+
+case "incidencias":
+return <Incidencias/>;
+
+default:
+return <Perfil/>;
+
+}
 
 }
 
@@ -23,71 +47,10 @@ return (
 <h2>Sistema de Administración</h2>
 </header>
 
-<section>
+<Menu setVista={setVista}/>
 
-<h3>Perfil del Residente</h3>
-
-<input placeholder="Nombre"/>
-<input placeholder="Número de casa"/>
-<input placeholder="Teléfono"/>
-
-<button>Guardar</button>
-
-</section>
-
-<section>
-
-<h3>Reportes a Mesa Directiva</h3>
-
-<textarea placeholder="Escriba su reporte"></textarea>
-
-<button>Enviar reporte</button>
-
-</section>
-
-<section>
-
-<h3>QR para Invitados</h3>
-
-<button onClick={generarQR}>
-Generar Código QR
-</button>
-
-<br/><br/>
-
-{qr && (
-<div>
-
-<QRCodeCanvas value={qr} size={180} />
-
-<p>Código generado: {qr}</p>
-
-</div>
-)}
-
-</section>
-
-<section>
-
-<h3>Adeudos</h3>
-
-<table>
-
-<tr>
-<th>Casa</th>
-<th>Propietario</th>
-<th>Adeudo</th>
-</tr>
-
-<tr>
-<td>12</td>
-<td>Juan Pérez</td>
-<td>$1500</td>
-</tr>
-
-</table>
-
-</section>
+{/* AQUÍ CAMBIA LA PANTALLA */}
+{renderVista()}
 
 </div>
 
