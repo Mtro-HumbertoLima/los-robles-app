@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/los-robles-app/static/css/main.eac5ab57.css",
-    "main.js": "/los-robles-app/static/js/main.9a7f0426.js",
+    "main.css": "/los-robles-app/static/css/main.2845dcf0.css",
+    "main.js": "/los-robles-app/static/js/main.7e32c24d.js",
     "static/js/453.64977c2f.chunk.js": "/los-robles-app/static/js/453.64977c2f.chunk.js",
     "index.html": "/los-robles-app/index.html",
-    "main.eac5ab57.css.map": "/los-robles-app/static/css/main.eac5ab57.css.map",
-    "main.9a7f0426.js.map": "/los-robles-app/static/js/main.9a7f0426.js.map",
+    "main.2845dcf0.css.map": "/los-robles-app/static/css/main.2845dcf0.css.map",
+    "main.7e32c24d.js.map": "/los-robles-app/static/js/main.7e32c24d.js.map",
     "453.64977c2f.chunk.js.map": "/los-robles-app/static/js/453.64977c2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eac5ab57.css",
-    "static/js/main.9a7f0426.js"
+    "static/css/main.2845dcf0.css",
+    "static/js/main.7e32c24d.js"
   ]
 }
