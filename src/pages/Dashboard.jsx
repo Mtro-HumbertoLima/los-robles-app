@@ -5,6 +5,7 @@ import Reportes from "../components/Reportes";
 import QR from "../components/QR";
 import Adeudos from "../components/Adeudos";
 import Incidencias from "../components/Incidencias";
+import Discusiones from "../components/Discusiones";
 
 export default function Dashboard() {
   const [vista, setVista] = useState("perfil");
@@ -25,6 +26,9 @@ export default function Dashboard() {
 
       case "incidencias":
         return <Incidencias />;
+        
+      case "discusiones":
+        return <Discusiones />;
 
       default:
         return <Perfil />;

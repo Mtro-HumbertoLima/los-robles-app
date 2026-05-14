@@ -24,6 +24,10 @@ Adeudos
 Incidencias
 </button>
 
+<button onClick={() => setVista("discusiones")}>
+Discusiones
+</button>
+
 </nav>
 
 );
