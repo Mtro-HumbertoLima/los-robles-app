@@ -30,22 +30,37 @@ useEffect(() => {
 };
 
   return (
-    <form onSubmit={manejarLogin}>
-      <h2>Login</h2>
 
-      <input
-        type="email"
-        placeholder="Correo"
-        onChange={(e) => setEmail(e.target.value)}
-      />
+  <div className="login-container">
 
-      <input
-        type="password"
-        placeholder="Contraseña"
-        onChange={(e) => setPassword(e.target.value)}
-      />
+    <div className="login-card">
 
-      <button type="submit">Entrar</button>
-    </form>
+      <h1>Condominio Los Robles</h1>
+
+      <h3>Acceso residencial</h3>
+
+      <form onSubmit={manejarLogin}>
+
+        <input
+          type="email"
+          placeholder="Correo electrónico"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <input
+          type="password"
+          placeholder="Contraseña"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <button type="submit">
+          Entrar
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
   );
 }
